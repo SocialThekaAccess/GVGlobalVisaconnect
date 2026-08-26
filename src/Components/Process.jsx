@@ -118,32 +118,44 @@ function Process() {
           <h2>Typical Timelines</h2>
           <div className="pr-timeline-grid">
             <div className="pr-timeline-card">
-              <div className="pr-tl-icon">🎓</div>
+              <div className="pr-tl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3L1 9L12 15L23 9L12 3Z"/><path d="M5 11.09V17C5 17 7.5 20 12 20C16.5 20 19 17 19 17V11.09"/><path d="M23 9V15"/></svg>
+              </div>
               <h4>Student Visa</h4>
               <span>8 – 14 weeks</span>
             </div>
             <div className="pr-timeline-card">
-              <div className="pr-tl-icon">💼</div>
+              <div className="pr-tl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+              </div>
               <h4>Work Permit</h4>
               <span>3 – 6 months</span>
             </div>
             <div className="pr-timeline-card">
-              <div className="pr-tl-icon">✈️</div>
+              <div className="pr-tl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 3L3 10.5L10.5 13.5M21 3L13.5 21L10.5 13.5M21 3L10.5 13.5"/></svg>
+              </div>
               <h4>Visitor Visa</h4>
               <span>2 – 6 weeks</span>
             </div>
             <div className="pr-timeline-card">
-              <div className="pr-tl-icon">🌐</div>
+              <div className="pr-tl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12H22"/><path d="M12 2C9.5 6 8 9 8 12C8 15 9.5 18 12 22"/><path d="M12 2C14.5 6 16 9 16 12C16 15 14.5 18 12 22"/></svg>
+              </div>
               <h4>Permanent Residency</h4>
               <span>6 – 18 months</span>
             </div>
             <div className="pr-timeline-card">
-              <div className="pr-tl-icon">👨‍👩‍👧</div>
+              <div className="pr-tl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="7" r="3"/><path d="M3 21V19C3 16.79 5.24 15 8 15H10C12.76 15 15 16.79 15 19V21"/><path d="M16 3.13C17.16 3.35 18 4.38 18 5.63C18 6.87 17.16 7.9 16 8.12"/><path d="M21 21V19C20.99 17.76 20.15 16.73 19 16.5"/></svg>
+              </div>
               <h4>Family Sponsorship</h4>
               <span>4 – 12 months</span>
             </div>
             <div className="pr-timeline-card">
-              <div className="pr-tl-icon">🏢</div>
+              <div className="pr-tl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9L12 2L21 9V20C21 20.55 20.55 21 20 21H4C3.45 21 3 20.55 3 20V9Z"/><path d="M9 21V12H15V21"/></svg>
+              </div>
               <h4>Business Immigration</h4>
               <span>6 – 18 months</span>
             </div>
