@@ -1,3 +1,4 @@
+import serviceImg from '../assets/Service.png'
 import './Service.css'
 
 const services = [
@@ -87,7 +88,7 @@ function Service() {
     <div className="sr-page">
 
       {/* Hero */}
-      <section className="sr-hero">
+      <section className="sr-hero" style={{ backgroundImage: `url(${serviceImg})` }}>
         <div className="sr-hero-overlay" />
         <div className="sr-container sr-hero-content">
           <span className="sr-badge">OUR SERVICES</span>
