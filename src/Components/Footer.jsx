@@ -49,7 +49,7 @@ function Footer() {
             <h4>Contact Us</h4>
             <ul>
               <li>📞 <a href="tel:+918699078400">+91 8699078400</a></li>
-              <li>📧 <a href="mailto:info@globalvisaservices.com">info@globalvisaservices.com</a></li>
+              <li>📧 <a href="mailto:info@globalvisaservices.com">Info@globalvisaconnect.in</a></li>
               <li>📍 SCO 85-86 (4th Floor),<br />Sector 34A, Chandigarh</li>
               <li>🕒 Mon–Sat: 9:00 AM – 7:00 PM</li>
             </ul>

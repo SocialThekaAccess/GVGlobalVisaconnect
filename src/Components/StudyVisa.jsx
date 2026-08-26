@@ -121,7 +121,7 @@ function StudyVisa() {
         <div className="sv-hero-overlay" />
         <div className="sv-container sv-hero-content">
           <span className="sv-badge">STUDENT VISA SERVICES</span>
-          <h1>Study Abroad<br /><span>Your Future Starts Here</span></h1>
+          <h1>Study Abroad<br />Your Future Starts Here</h1>
           <p>
             From university selection to visa approval — we handle every step so
             you can focus on choosing where to build your future.

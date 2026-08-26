@@ -69,7 +69,7 @@ function Process() {
         <div className="pr-hero-overlay" />
         <div className="pr-container pr-hero-content">
           <span className="pr-badge">HOW IT WORKS</span>
-          <h1>A Process Built<br /><span>for Your Success</span></h1>
+          <h1>A Process Built<br />for Your Success</h1>
           <p>
             Six clear steps from your first consultation to your visa approval —
             with a dedicated expert guiding you at every stage.
