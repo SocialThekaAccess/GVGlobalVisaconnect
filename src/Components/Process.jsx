@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import processImg from '../assets/Process.png'
 import './Process.css'
 
 const stages = [
@@ -64,11 +65,11 @@ function Process() {
       </Helmet>
 
       {/* Hero */}
-      <section className="pr-hero">
+      <section className="pr-hero" style={{ backgroundImage: `url(${processImg})` }}>
         <div className="pr-hero-overlay" />
         <div className="pr-container pr-hero-content">
           <span className="pr-badge">HOW IT WORKS</span>
-          <h1>A Process Built for<br /><span>Your Success.</span></h1>
+          <h1>A Process Built<br /><span>for Your Success</span></h1>
           <p>
             Six clear steps from your first consultation to your visa approval —
             with a dedicated expert guiding you at every stage.

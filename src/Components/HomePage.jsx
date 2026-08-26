@@ -138,7 +138,7 @@ function HomePage() {
         <div className="container hero-content">
           <div className="hero-text">
             <span className="badge-hero">LICENSED IMMIGRATION CONSULTANTS SINCE 2008</span>
-            <h1>Your global future, <span className="highlight">expertly navigated.</span></h1>
+            <h1>Your global future<br /><span className="highlight">expertly navigated</span></h1>
             <p>Global Visa Connect guides students, professionals and families through study, work and residency pathways in over 40 countries — with a process built on precision, transparency and genuine care.</p>
             <div className="hero-buttons">
               <a href="#contact" className="btn btn-primary btn-lg">Book a Consultation →</a>

@@ -97,7 +97,7 @@ function Service() {
         <div className="sr-hero-overlay" />
         <div className="sr-container sr-hero-content">
           <span className="sr-badge">OUR SERVICES</span>
-          <h1>Complete Immigration<br /><span>Solutions, All in One Place.</span></h1>
+          <h1>Complete Immigration<br /><span>Solutions All in One Place</span></h1>
           <p>
             From student permits to permanent residency — we offer end-to-end
             immigration services across every major category and destination.

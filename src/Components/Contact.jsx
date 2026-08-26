@@ -47,7 +47,7 @@ function Contact() {
         <div className="ct-hero-overlay" />
         <div className="ct-container ct-hero-content">
           <span className="ct-badge">GET IN TOUCH</span>
-          <h1>Let's Start Your<br /><span>Immigration Journey.</span></h1>
+          <h1>Let's Start Your<br /><span>Immigration Journey</span></h1>
           <p>Book a free consultation with our certified immigration experts — no pressure, just honest advice.</p>
           <div className="ct-hero-trust">
             <div className="ct-trust-item">⭐ 4.9/5 from 2,100+ clients</div>

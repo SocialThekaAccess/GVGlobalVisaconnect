@@ -89,7 +89,7 @@ function AboutUs() {
         <div className="au-hero-overlay" />
         <div className="au-container au-hero-content">
           <span className="au-badge">ABOUT US</span>
-          <h1>Trusted by Thousands.<br /><span>Built on Integrity.</span></h1>
+          <h1>Trusted by Thousands<br /><span>Built on Integrity</span></h1>
           <p>
             Since 2008, Global Visa Connect has helped over 12,400 students,
             professionals and families build their futures abroad — with honesty,
