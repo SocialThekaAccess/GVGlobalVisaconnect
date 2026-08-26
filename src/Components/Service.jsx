@@ -186,7 +186,7 @@ function Service() {
           <h2>Not Sure Which Service You Need?</h2>
           <p>Book a free consultation and our experts will guide you to the right pathway.</p>
           <div className="sr-cta-btns">
-            <a href="tel:+918699078400" className="sr-btn sr-btn-primary">📞 Call Us Now</a>
+            <a href="tel:+918699078400" className="sr-btn sr-btn-white">📞 Call Us Now</a>
             <a href="mailto:info@globalvisaservices.com" className="sr-btn sr-btn-secondary">✉️ Send Inquiry</a>
           </div>
         </div>

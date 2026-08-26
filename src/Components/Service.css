@@ -88,6 +88,18 @@
   box-shadow: 0 2px 0 #0f1a2e;
 }
 
+.sr-btn-white {
+  background: white;
+  color: #e83229;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.15);
+}
+
+.sr-btn-white:hover {
+  background: #f5f5f5;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+}
+
 /* ── Hero ── */
 .sr-hero {
   position: relative;
