@@ -128,11 +128,11 @@ function StudyVisa() {
           <div className="sv-programs-grid">
             {programs.map((p, i) => (
               <div key={i} className="sv-program-card">
-                <div className="sv-program-img-wrap">
-                  <img src={p.img} alt={p.name} className="sv-program-img" />
-                  {p.tag && <span className="sv-program-tag">{p.tag}</span>}
+                <div className="sv-dest-img-wrap">
+                  <img src={p.img} alt={p.name} className="sv-dest-img" />
+                  {p.tag && <span className="sv-dest-tag">{p.tag}</span>}
                 </div>
-                <div className="sv-program-body">
+                <div className="sv-dest-body">
                   <h3>{p.name}</h3>
                   <div className="sv-program-meta">
                     <span>{p.visa}</span>

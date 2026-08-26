@@ -213,64 +213,64 @@
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .sv-program-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.14);
   border-color: #e83229;
 }
 
-.sv-program-img-wrap {
+.sv-dest-img-wrap {
   position: relative;
   width: 100%;
-  height: 180px;
+  height: 200px;
   overflow: hidden;
 }
 
-.sv-program-img {
+.sv-dest-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
 
-.sv-program-card:hover .sv-program-img {
+.sv-program-card:hover .sv-dest-img {
   transform: scale(1.06);
 }
 
-.sv-program-tag {
+.sv-dest-tag {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 14px;
+  left: 14px;
   background: #e83229;
   color: white;
   font-size: 11px;
   font-weight: 700;
   padding: 4px 12px;
   border-radius: 20px;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-.sv-program-body {
+.sv-dest-body {
   padding: 24px 28px 28px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-.sv-program-body h3 {
+.sv-dest-body h3 {
   font-size: 1.25rem;
   color: #1a2b4f;
   margin-bottom: 8px;
 }
 
-.sv-program-body p {
+.sv-dest-body p {
   color: #6b7280;
-  font-size: 0.93rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.55;
   margin-bottom: 20px;
   flex: 1;
 }
