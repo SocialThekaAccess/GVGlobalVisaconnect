@@ -41,7 +41,7 @@ function Navbar() {
           <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
             <Link to="/services">Services</Link>
             <Link to="/study-visa">Study Visa</Link>
-            <a href="#process" onClick={() => scrollToSection('process')}>Process</a>
+            <Link to="/process">Process</Link>
           </div>
 
           <div className="nav-cta">

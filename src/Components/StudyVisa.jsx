@@ -1,49 +1,61 @@
 import studyVisaImg from '../assets/StudyVisa.png'
+import canadaImg from '../assets/Canada.png'
+import australiaImg from '../assets/Austraila.png'
+import ukImg from '../assets/UK.png'
+import usImg from '../assets/US.png'
+import nzImg from '../assets/Newzeland.png'
+import europeImg from '../assets/Europe.png'
 import { Helmet } from 'react-helmet-async'
 import './StudyVisa.css'
 
 const programs = [
   {
-    country: '🇨🇦',
+    img: canadaImg,
     name: 'Canada',
     visa: 'Student Permit',
     duration: '1–4 years',
-    desc: 'Study at top-ranked Canadian universities with post-graduation work rights through PGWP.'
+    desc: 'Study at top-ranked Canadian universities with post-graduation work rights through PGWP.',
+    tag: 'Most Popular'
   },
   {
-    country: '🇦🇺',
+    img: australiaImg,
     name: 'Australia',
     visa: 'Student Visa (500)',
     duration: '2–4 years',
-    desc: 'World-class education with work rights during and after your degree.'
+    desc: 'World-class education with work rights during and after your degree.',
+    tag: 'Top Rated'
   },
   {
-    country: '🇬🇧',
+    img: ukImg,
     name: 'United Kingdom',
     visa: 'Student Visa',
     duration: '1–3 years',
-    desc: 'Prestigious UK degrees with the Graduate Route visa for 2 years post-study work.'
+    desc: 'Prestigious UK degrees with the Graduate Route visa for 2 years post-study work.',
+    tag: ''
   },
   {
-    country: '🇺🇸',
+    img: usImg,
     name: 'United States',
     visa: 'F-1 Student Visa',
     duration: '2–4 years',
-    desc: 'Access to Ivy League and top US universities with OPT work opportunities.'
+    desc: 'Access to Ivy League and top US universities with OPT work opportunities.',
+    tag: ''
   },
   {
-    country: '🇳🇿',
+    img: nzImg,
     name: 'New Zealand',
     visa: 'Student Visa',
     duration: '1–3 years',
-    desc: 'Safe, welcoming country with quality education and pathways to residency.'
+    desc: 'Safe, welcoming country with quality education and pathways to residency.',
+    tag: ''
   },
   {
-    country: '🇩🇪',
-    name: 'Germany',
+    img: europeImg,
+    name: 'Europe',
     visa: 'Student Visa',
     duration: '2–3 years',
-    desc: 'Low or no tuition fees at public universities with strong career prospects in Europe.'
+    desc: 'Low or no tuition fees at public universities with strong career prospects in Europe.',
+    tag: ''
   }
 ]
 
@@ -116,8 +128,11 @@ function StudyVisa() {
           <div className="sv-programs-grid">
             {programs.map((p, i) => (
               <div key={i} className="sv-program-card">
-                <div className="sv-program-flag">{p.country}</div>
-                <div className="sv-program-info">
+                <div className="sv-program-img-wrap">
+                  <img src={p.img} alt={p.name} className="sv-program-img" />
+                  {p.tag && <span className="sv-program-tag">{p.tag}</span>}
+                </div>
+                <div className="sv-program-body">
                   <h3>{p.name}</h3>
                   <div className="sv-program-meta">
                     <span>{p.visa}</span>
@@ -125,8 +140,8 @@ function StudyVisa() {
                     <span>{p.duration}</span>
                   </div>
                   <p>{p.desc}</p>
+                  <a href="/contact" className="sv-link">Apply Now →</a>
                 </div>
-                <a href="#contact" className="sv-link">Apply Now →</a>
               </div>
             ))}
           </div>

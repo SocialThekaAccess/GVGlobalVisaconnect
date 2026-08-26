@@ -7,6 +7,7 @@ import StudyVisa from './Components/StudyVisa'
 import Service from './Components/Service'
 import Contact from './Components/Contact'
 import AboutUs from './Components/AboutUs'
+import Process from './Components/Process'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/study-visa" element={<StudyVisa />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/process" element={<Process />} />
         </Routes>
         <Footer />
         <WhatsAppButton />

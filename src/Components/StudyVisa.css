@@ -208,11 +208,10 @@
 .sv-program-card {
   background: white;
   border-radius: 16px;
-  padding: 32px;
+  overflow: hidden;
   border: 1px solid #e5e7eb;
   display: flex;
   flex-direction: column;
-  gap: 16px;
   transition: all 0.3s ease;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
@@ -223,14 +222,57 @@
   border-color: #e83229;
 }
 
-.sv-program-flag {
-  font-size: 2.8rem;
+.sv-program-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
 }
 
-.sv-program-info h3 {
-  font-size: 1.3rem;
+.sv-program-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.sv-program-card:hover .sv-program-img {
+  transform: scale(1.06);
+}
+
+.sv-program-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #e83229;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sv-program-body {
+  padding: 24px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sv-program-body h3 {
+  font-size: 1.25rem;
   color: #1a2b4f;
   margin-bottom: 8px;
+}
+
+.sv-program-body p {
+  color: #6b7280;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
 }
 
 .sv-program-meta {
@@ -239,12 +281,6 @@
   font-size: 13px;
   color: #9ca3af;
   margin-bottom: 10px;
-}
-
-.sv-program-info p {
-  color: #6b7280;
-  font-size: 0.95rem;
-  line-height: 1.6;
 }
 
 .sv-link {
