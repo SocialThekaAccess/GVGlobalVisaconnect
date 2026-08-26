@@ -9,14 +9,6 @@ const offices = [
     email: 'info@globalvisaservices.com',
     hours: 'Mon–Sat: 9:00 AM – 7:00 PM',
     primary: true
-  },
-  {
-    city: 'Delhi',
-    address: 'Connaught Place, New Delhi',
-    phone: '+91 8699078401',
-    email: 'delhi@globalvisaservices.com',
-    hours: 'Mon–Sat: 9:00 AM – 6:00 PM',
-    primary: false
   }
 ]
 

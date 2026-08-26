@@ -1,0 +1,552 @@
+/* ── About Us Page ── */
+
+.au-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.au-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.au-label {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(232, 50, 41, 0.1);
+  color: #e83229;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.au-label-red {
+  display: inline-block;
+  color: #e83229;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.au-section-header {
+  text-align: left;
+  margin-bottom: 56px;
+}
+
+.au-section-header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: #1a2b4f;
+  margin-bottom: 12px;
+}
+
+.au-section-header p {
+  color: #6b7280;
+  font-size: 1.05rem;
+}
+
+/* Buttons */
+.au-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Sora', sans-serif;
+}
+
+.au-btn-primary {
+  background: #e83229;
+  color: white;
+  box-shadow: 0 4px 0 #c12920, 0 8px 15px rgba(232, 50, 41, 0.3);
+}
+
+.au-btn-primary:hover {
+  background: #d12d25;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #c12920;
+}
+
+.au-btn-secondary {
+  background: #1a2b4f;
+  color: white;
+  box-shadow: 0 4px 0 #0f1a2e;
+}
+
+.au-btn-secondary:hover {
+  background: #142039;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #0f1a2e;
+}
+
+/* ── Hero ── */
+.au-hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 82px;
+}
+
+.au-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(14, 23, 56, 0.94) 0%, rgba(14, 23, 56, 0.85) 100%);
+}
+
+.au-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 80px 0;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.au-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.au-hero-content h1 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  color: white;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  max-width: 680px;
+}
+
+.au-hero-content h1 span {
+  color: #e83229;
+}
+
+.au-hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.88;
+  max-width: 600px;
+  margin-bottom: 48px;
+}
+
+.au-hero-stats {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.au-hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.au-hero-stat strong {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Sora', sans-serif;
+  color: white;
+}
+
+.au-hero-stat span {
+  font-size: 12px;
+  opacity: 0.65;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Story ── */
+.au-story {
+  padding: 100px 0;
+  background: white;
+}
+
+.au-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.au-story-img {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 540px;
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.15);
+}
+
+.au-story-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.au-story-badge {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  background: white;
+  border-radius: 14px;
+  padding: 16px 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.au-story-badge strong {
+  font-size: 1.1rem;
+  color: #1a2b4f;
+  font-family: 'Sora', sans-serif;
+}
+
+.au-story-badge span {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.au-story-content h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  color: #1a2b4f;
+  line-height: 1.2;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+.au-story-content p {
+  color: #6b7280;
+  font-size: 0.98rem;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.au-story-content .au-btn {
+  margin-top: 12px;
+}
+
+/* ── Values ── */
+.au-values {
+  padding: 100px 0;
+  background: #f9fafb;
+}
+
+.au-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.au-value-card {
+  background: white;
+  border-radius: 16px;
+  padding: 36px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.au-value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+  border-color: #e83229;
+}
+
+.au-value-icon {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.au-value-card h3 {
+  font-size: 1.15rem;
+  color: #1a2b4f;
+  margin-bottom: 10px;
+}
+
+.au-value-card p {
+  color: #6b7280;
+  font-size: 0.93rem;
+  line-height: 1.65;
+}
+
+/* ── Team ── */
+.au-team {
+  padding: 100px 0;
+  background: white;
+}
+
+.au-team-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.au-team-card {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+  background: #f9fafb;
+  border-radius: 20px;
+  padding: 36px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.au-team-card:hover {
+  border-color: #e83229;
+  box-shadow: 0 8px 32px rgba(232, 50, 41, 0.08);
+}
+
+.au-team-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #1a2b4f, #2d4a8a);
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Sora', sans-serif;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px rgba(26, 43, 79, 0.25);
+}
+
+.au-team-info h3 {
+  font-size: 1.25rem;
+  color: #1a2b4f;
+  margin-bottom: 6px;
+}
+
+.au-team-role {
+  display: block;
+  font-size: 13px;
+  color: #e83229;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.au-team-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.au-team-tag {
+  padding: 4px 12px;
+  background: rgba(26, 43, 79, 0.08);
+  color: #1a2b4f;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.au-team-info p {
+  color: #6b7280;
+  font-size: 0.93rem;
+  line-height: 1.65;
+  max-width: 680px;
+}
+
+/* ── Timeline ── */
+.au-timeline {
+  padding: 100px 0;
+  background: #f9fafb;
+}
+
+.au-timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  padding-left: 160px;
+}
+
+.au-timeline-list::before {
+  content: '';
+  position: absolute;
+  left: 120px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: linear-gradient(to bottom, #e83229, #1a2b4f);
+}
+
+.au-timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 0 0 40px 0;
+  position: relative;
+}
+
+.au-timeline-year {
+  position: absolute;
+  left: -148px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a2b4f;
+  font-family: 'Sora', sans-serif;
+  width: 80px;
+  text-align: right;
+  padding-top: 2px;
+}
+
+.au-timeline-dot {
+  position: absolute;
+  left: -31px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  background: #e83229;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #e83229;
+  flex-shrink: 0;
+}
+
+.au-timeline-text {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  border: 1px solid #e5e7eb;
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* ── CTA ── */
+.au-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #1a2b4f 0%, #0e1738 100%);
+}
+
+.au-cta-content {
+  text-align: left;
+}
+
+.au-cta-content h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: white;
+  margin-bottom: 16px;
+}
+
+.au-cta-content p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.1rem;
+  margin-bottom: 36px;
+}
+
+.au-cta-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .au-story-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .au-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .au-timeline-list {
+    padding-left: 100px;
+  }
+
+  .au-timeline-list::before {
+    left: 60px;
+  }
+
+  .au-timeline-year {
+    left: -88px;
+    font-size: 1.1rem;
+  }
+
+  .au-timeline-dot {
+    left: -31px;
+  }
+}
+
+@media (max-width: 768px) {
+  .au-hero-stats {
+    gap: 28px;
+  }
+
+  .au-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .au-team-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .au-timeline-list {
+    padding-left: 0;
+  }
+
+  .au-timeline-list::before {
+    display: none;
+  }
+
+  .au-timeline-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .au-timeline-year {
+    position: static;
+    text-align: left;
+    color: #e83229;
+    font-size: 1.1rem;
+  }
+
+  .au-timeline-dot {
+    display: none;
+  }
+
+  .au-story-img {
+    height: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .au-container {
+    padding: 0 16px;
+  }
+
+  .au-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .au-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
