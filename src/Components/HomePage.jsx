@@ -1,6 +1,12 @@
 import heroImg from '../assets/HerosectionImg.png'
 import consultantImg from '../assets/consulatant.png'
 import logo from '../assets/GVC-logo.png'
+import canadaImg from '../assets/Canada.png'
+import australiaImg from '../assets/Austraila.png'
+import ukImg from '../assets/UK.png'
+import usImg from '../assets/US.png'
+import nzImg from '../assets/Newzeland.png'
+import europeImg from '../assets/Europe.png'
 import './HomePage.css'
 
 function HomePage() {
@@ -75,12 +81,12 @@ function HomePage() {
   ]
 
   const destinations = [
-    { name: 'Canada', flag: '🇨🇦', programs: 'Express Entry, PNP, Study & Work' },
-    { name: 'Australia', flag: '🇦🇺', programs: 'Skilled Migration, Student Visa' },
-    { name: 'United Kingdom', flag: '🇬🇧', programs: 'Skilled Worker, Graduate Route' },
-    { name: 'United States', flag: '🇺🇸', programs: 'H1B, L1, Student Visa' },
-    { name: 'New Zealand', flag: '🇳🇿', programs: 'Skilled Migrant, Work Visa' },
-    { name: 'Europe', flag: '🇪🇺', programs: 'Schengen, Work Permits' }
+    { name: 'Canada', img: canadaImg, programs: 'Express Entry, PNP, Study & Work', tag: 'Most Popular' },
+    { name: 'Australia', img: australiaImg, programs: 'Skilled Migration, Student Visa', tag: 'Top Rated' },
+    { name: 'United Kingdom', img: ukImg, programs: 'Skilled Worker, Graduate Route', tag: '' },
+    { name: 'United States', img: usImg, programs: 'H1B, L1, Student Visa', tag: '' },
+    { name: 'New Zealand', img: nzImg, programs: 'Skilled Migrant, Work Visa', tag: '' },
+    { name: 'Europe', img: europeImg, programs: 'Schengen, Work Permits', tag: '' }
   ]
 
   const process = [
@@ -281,10 +287,15 @@ function HomePage() {
           <div className="destinations-grid">
             {destinations.map((dest, index) => (
               <div key={index} className="destination-card">
-                <div className="dest-flag">{dest.flag}</div>
-                <h3>{dest.name}</h3>
-                <p>{dest.programs}</p>
-                <a href="#contact" className="dest-link">Explore Programs →</a>
+                <div className="dest-img-wrap">
+                  <img src={dest.img} alt={dest.name} className="dest-img" />
+                  {dest.tag && <span className="dest-tag">{dest.tag}</span>}
+                </div>
+                <div className="dest-body">
+                  <h3>{dest.name}</h3>
+                  <p>{dest.programs}</p>
+                  <a href="#contact" className="dest-link">Explore Programs →</a>
+                </div>
               </div>
             ))}
           </div>
