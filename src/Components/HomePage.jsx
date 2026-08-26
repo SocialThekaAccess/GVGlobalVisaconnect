@@ -1,5 +1,6 @@
 import heroImg from '../assets/HerosectionImg.png'
 import consultantImg from '../assets/consulatant.png'
+import logo from '../assets/GVC-logo.png'
 import './HomePage.css'
 
 function HomePage() {
