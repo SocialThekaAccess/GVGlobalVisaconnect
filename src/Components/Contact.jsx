@@ -42,23 +42,8 @@ function Contact() {
         <meta name="description" content="Book a free immigration consultation with our certified advisors. Chandigarh office. Response within 4 hours." />
       </Helmet>
 
-      {/* Hero */}
-      <section className="ct-hero">
-        <div className="ct-hero-overlay" />
-        <div className="ct-container ct-hero-content">
-          <span className="ct-badge">GET IN TOUCH</span>
-          <h1>Let's Start Your<br /><span>Immigration Journey</span></h1>
-          <p>Book a free consultation with our certified immigration experts — no pressure, just honest advice.</p>
-          <div className="ct-hero-trust">
-            <div className="ct-trust-item">⭐ 4.9/5 from 2,100+ clients</div>
-            <div className="ct-trust-item">✓ Response within 4 hours</div>
-            <div className="ct-trust-item">🎓 ICCRC & MARA registered</div>
-          </div>
-        </div>
-      </section>
-
       {/* Main Content */}
-      <section className="ct-main">
+      <section className="ct-main" style={{paddingTop: '120px'}}>
         <div className="ct-container ct-main-grid">
 
           {/* Form */}
@@ -119,7 +104,6 @@ function Contact() {
                   <select name="service" value={formData.service} onChange={handleChange}>
                     <option value="">Select a service</option>
                     <option value="student">Student Visa</option>
-                    <option value="work">Work Permit</option>
                     <option value="visitor">Visitor Visa</option>
                     <option value="pr">Permanent Residency</option>
                     <option value="family">Family Sponsorship</option>

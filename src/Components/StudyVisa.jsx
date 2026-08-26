@@ -6,6 +6,7 @@ import usImg from '../assets/US.png'
 import nzImg from '../assets/Newzeland.png'
 import europeImg from '../assets/Europe.png'
 import { Helmet } from 'react-helmet-async'
+import { useState } from 'react'
 import './StudyVisa.css'
 
 const programs = [
@@ -14,7 +15,7 @@ const programs = [
     name: 'Canada',
     visa: 'Student Permit',
     duration: '1–4 years',
-    desc: 'Study at top-ranked Canadian universities with post-graduation work rights through PGWP.',
+    desc: 'Study at top-ranked Canadian universities with post-graduation rights through PGWP.',
     tag: 'Most Popular'
   },
   {
@@ -22,7 +23,7 @@ const programs = [
     name: 'Australia',
     visa: 'Student Visa (500)',
     duration: '2–4 years',
-    desc: 'World-class education with work rights during and after your degree.',
+    desc: 'World-class education with study rights during and after your degree.',
     tag: 'Top Rated'
   },
   {
@@ -30,7 +31,7 @@ const programs = [
     name: 'United Kingdom',
     visa: 'Student Visa',
     duration: '1–3 years',
-    desc: 'Prestigious UK degrees with the Graduate Route visa for 2 years post-study work.',
+    desc: 'Prestigious UK degrees with the Graduate Route visa for 2 years post-study.',
     tag: ''
   },
   {
@@ -38,7 +39,7 @@ const programs = [
     name: 'United States',
     visa: 'F-1 Student Visa',
     duration: '2–4 years',
-    desc: 'Access to Ivy League and top US universities with OPT work opportunities.',
+    desc: 'Access to Ivy League and top US universities with OPT opportunities.',
     tag: ''
   },
   {
@@ -74,8 +75,8 @@ const faqs = [
     a: 'Most universities require 6.0–6.5 overall. Some accept PTE or TOEFL equivalents. We help you choose programs matching your current score.'
   },
   {
-    q: 'Can I work while studying abroad?',
-    a: 'Yes — most countries allow 20 hrs/week during studies. Canada, Australia and UK allow full-time work during breaks.'
+    q: 'Can I stay while studying abroad?',
+    a: 'Yes — most countries allow part-time opportunities during studies. Canada, Australia and UK allow full-time during breaks.'
   },
   {
     q: 'What is the typical processing time?',
@@ -88,6 +89,26 @@ const faqs = [
 ]
 
 function StudyVisa() {
+  const [showPopup, setShowPopup] = useState(false)
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    service: 'student',
+    message: ''
+  })
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    alert('Form submitted! We will contact you soon.')
+    setShowPopup(false)
+    setFormData({ name: '', email: '', phone: '', service: 'student', message: '' })
+  }
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
   return (
     <div className="sv-page">
       <Helmet>
@@ -140,7 +161,7 @@ function StudyVisa() {
                     <span>{p.duration}</span>
                   </div>
                   <p>{p.desc}</p>
-                  <a href="/contact" className="sv-link">Apply Now →</a>
+                  <button onClick={() => setShowPopup(true)} className="sv-link">Apply Now →</button>
                 </div>
               </div>
             ))}
@@ -250,6 +271,74 @@ function StudyVisa() {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Popup */}
+      {showPopup && (
+        <div className="popup-overlay" onClick={() => setShowPopup(false)}>
+          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+            <button className="popup-close" onClick={() => setShowPopup(false)}>×</button>
+            <h2>Apply Now</h2>
+            <p>Fill out the form and our team will contact you within 24 hours</p>
+            <form onSubmit={handleSubmit} className="popup-form">
+              <div className="form-group">
+                <label>Full Name *</label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter your full name"
+                />
+              </div>
+              <div className="form-group">
+                <label>Email *</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  placeholder="your@email.com"
+                />
+              </div>
+              <div className="form-group">
+                <label>Phone Number *</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  placeholder="+91 "
+                />
+              </div>
+              <div className="form-group">
+                <label>Service *</label>
+                <select name="service" value={formData.service} onChange={handleChange} required>
+                  <option value="student">Student Visa</option>
+                  <option value="visitor">Visitor Visa</option>
+                  <option value="pr">Permanent Residency</option>
+                  <option value="business">Business Immigration</option>
+                </select>
+              </div>
+              <div className="form-group">
+                <label>Message</label>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows="4"
+                  placeholder="Tell us about your plans..."
+                ></textarea>
+              </div>
+              <button type="submit" className="sv-btn sv-btn-primary" style={{width: '100%'}}>
+                Submit Application →
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
 
     </div>
   )

@@ -18,19 +18,6 @@ const services = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <line x1="12" y1="12" x2="12" y2="16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-      </svg>
-    ),
-    title: 'Work Permit',
-    desc: 'Comprehensive support for skilled workers seeking employment abroad across all major industries.',
-    points: ['Profile & eligibility assessment', 'Employer sponsor guidance', 'LMIA & skilled worker visas', 'PR pathway planning']
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M21 3L3 10.5L10.5 13.5M21 3L13.5 21L10.5 13.5M21 3L10.5 13.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
@@ -60,7 +47,7 @@ const services = [
     ),
     title: 'Family Sponsorship',
     desc: 'Reunite with your loved ones through spouse, dependent and family reunification visas.',
-    points: ['Spousal open work permits', 'Dependent child visas', 'Parent & grandparent PR', 'Relationship documentation']
+    points: ['Spousal sponsorship', 'Dependent child visas', 'Parent & grandparent PR', 'Relationship documentation']
   },
   {
     icon: (
@@ -89,7 +76,7 @@ function Service() {
     <div className="sr-page">
       <Helmet>
         <title>Services — Global Visa Connect</title>
-        <meta name="description" content="Complete immigration services — student visa, work permit, visitor visa, PR, family sponsorship and business immigration." />
+        <meta name="description" content="Complete immigration services — student visa, visitor visa, PR, family sponsorship and business immigration." />
       </Helmet>
 
       {/* Hero */}
@@ -145,7 +132,7 @@ function Service() {
                     </li>
                   ))}
                 </ul>
-                <a href="#contact" className="sr-link">Get Started →</a>
+                <a href="/contact" className="sr-link">Get Started →</a>
               </div>
             ))}
           </div>

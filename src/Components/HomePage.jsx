@@ -25,18 +25,6 @@ function HomePage() {
       )
     },
     {
-      title: 'Work Permit',
-      description: 'Comprehensive support for employment-based immigration',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <line x1="12" y1="12" x2="12" y2="16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-          <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        </svg>
-      )
-    },
-    {
       title: 'Visitor Visa',
       description: 'Hassle-free tourist and visitor visa processing',
       icon: (
@@ -82,12 +70,12 @@ function HomePage() {
   ]
 
   const destinations = [
-    { name: 'Canada', img: canadaImg, programs: 'Express Entry, PNP, Study & Work', tag: 'Most Popular' },
+    { name: 'Canada', img: canadaImg, programs: 'Express Entry, PNP, Study Visa', tag: 'Most Popular' },
     { name: 'Australia', img: australiaImg, programs: 'Skilled Migration, Student Visa', tag: 'Top Rated' },
-    { name: 'United Kingdom', img: ukImg, programs: 'Skilled Worker, Graduate Route', tag: '' },
+    { name: 'United Kingdom', img: ukImg, programs: 'Graduate Route, Student Visa', tag: '' },
     { name: 'United States', img: usImg, programs: 'H1B, L1, Student Visa', tag: '' },
-    { name: 'New Zealand', img: nzImg, programs: 'Skilled Migrant, Work Visa', tag: '' },
-    { name: 'Europe', img: europeImg, programs: 'Schengen, Work Permits', tag: '' }
+    { name: 'New Zealand', img: nzImg, programs: 'Skilled Migrant, Student Visa', tag: '' },
+    { name: 'Europe', img: europeImg, programs: 'Schengen, Study Permits', tag: '' }
   ]
 
   const process = [
@@ -113,7 +101,7 @@ function HomePage() {
     },
     {
       name: 'Amit Patel',
-      country: 'UK Work Visa',
+      country: 'UK Student Visa',
       text: 'Best immigration consultants! They guided me through every step and ensured all documents were perfect.',
       rating: 5
     }
@@ -128,7 +116,7 @@ function HomePage() {
     <div className="app">
       <Helmet>
         <title>Global Visa Connect — Immigration Consultants Since 2008</title>
-        <meta name="description" content="Expert immigration consultants for student visa, work permit, PR and family sponsorship in Canada, Australia, UK and more." />
+        <meta name="description" content="Expert immigration consultants for student visa, PR and family sponsorship in Canada, Australia, UK and more." />
       </Helmet>
 
       {/* Hero Section */}
@@ -139,7 +127,7 @@ function HomePage() {
           <div className="hero-text">
             <span className="badge-hero">LICENSED IMMIGRATION CONSULTANTS SINCE 2008</span>
             <h1>Your global future<br /><span className="highlight">expertly navigated</span></h1>
-            <p>Global Visa Connect guides students, professionals and families through study, work and residency pathways in over 40 countries — with a process built on precision, transparency and genuine care.</p>
+            <p>Global Visa Connect guides students and families through study and residency pathways in over 40 countries — with a process built on precision, transparency and genuine care.</p>
             <div className="hero-buttons">
               <a href="#contact" className="btn btn-primary btn-lg">Book a Consultation →</a>
               <a href="#services" className="btn btn-outline btn-lg">Explore Visa Services</a>
@@ -299,7 +287,7 @@ function HomePage() {
                 <div className="dest-body">
                   <h3>{dest.name}</h3>
                   <p>{dest.programs}</p>
-                  <a href="#contact" className="dest-link">Explore Programs →</a>
+                  <a href="/study-visa" className="dest-link">Explore Programs →</a>
                 </div>
               </div>
             ))}

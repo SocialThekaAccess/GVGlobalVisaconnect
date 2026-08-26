@@ -60,7 +60,7 @@ const team = [
   },
   {
     name: 'Rajiv Mehta',
-    role: 'Work Permit Specialist',
+    role: 'PR Specialist',
     exp: '10+ years',
     cred: 'ICCRC Member',
     desc: 'Rajiv specialises in LMIA, Express Entry and employer-sponsored pathways, with an unbroken 96% first-attempt success rate.'
@@ -69,7 +69,7 @@ const team = [
 
 const milestones = [
   { year: '2008', event: 'Founded in Chandigarh with a team of 3 advisors and a mission to transform immigration consulting in India.' },
-  { year: '2012', event: 'Crossed 1,000 successful visa applications. Expanded to student visa and work permit categories.' },
+  { year: '2012', event: 'Crossed 1,000 successful visa applications. Expanded to student visa and PR categories.' },
   { year: '2016', event: 'Opened second office in Delhi. Achieved ICCRC and MARA dual registration.' },
   { year: '2019', event: 'Launched dedicated Australia and New Zealand immigration division. 5,000+ cases milestone.' },
   { year: '2022', event: 'Recognised as one of North India\'s top immigration consultancies. 10,000+ successful applications.' },
@@ -211,7 +211,7 @@ function AboutUs() {
       {/* CTA */}
       <section className="au-cta">
         <div className="au-container au-cta-content">
-          <h2>Ready to Work With Us?</h2>
+          <h2>Ready to Start With Us?</h2>
           <p>Join 12,400+ clients who trusted Global Visa Connect with their future.</p>
           <div className="au-cta-btns">
             <a href="/contact" className="au-btn au-btn-primary">Book Free Consultation →</a>
