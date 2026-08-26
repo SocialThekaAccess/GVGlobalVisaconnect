@@ -42,7 +42,7 @@ function Navbar() {
             <Link to="/services">Services</Link>
             <Link to="/study-visa">Study Visa</Link>
             <a href="#process" onClick={() => scrollToSection('process')}>Process</a>
-            <a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a>
+            <Link to="/contact">Contact</Link>
           </div>
 
           <div className="nav-cta">
