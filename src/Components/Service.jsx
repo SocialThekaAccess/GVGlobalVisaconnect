@@ -1,4 +1,5 @@
 import serviceImg from '../assets/Service.png'
+import { Helmet } from 'react-helmet-async'
 import './Service.css'
 
 const services = [
@@ -86,6 +87,10 @@ const stats = [
 function Service() {
   return (
     <div className="sr-page">
+      <Helmet>
+        <title>Services — Global Visa Connect</title>
+        <meta name="description" content="Complete immigration services — student visa, work permit, visitor visa, PR, family sponsorship and business immigration." />
+      </Helmet>
 
       {/* Hero */}
       <section className="sr-hero" style={{ backgroundImage: `url(${serviceImg})` }}>

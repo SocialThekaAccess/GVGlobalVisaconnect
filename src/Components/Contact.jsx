@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import './Contact.css'
 
 const offices = [
@@ -36,6 +37,10 @@ function Contact() {
 
   return (
     <div className="ct-page">
+      <Helmet>
+        <title>Contact Us — Global Visa Connect</title>
+        <meta name="description" content="Book a free immigration consultation with our certified advisors. Chandigarh office. Response within 4 hours." />
+      </Helmet>
 
       {/* Hero */}
       <section className="ct-hero">

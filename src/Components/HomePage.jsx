@@ -7,6 +7,7 @@ import ukImg from '../assets/UK.png'
 import usImg from '../assets/US.png'
 import nzImg from '../assets/Newzeland.png'
 import europeImg from '../assets/Europe.png'
+import { Helmet } from 'react-helmet-async'
 import './HomePage.css'
 
 function HomePage() {
@@ -125,6 +126,10 @@ function HomePage() {
 
   return (
     <div className="app">
+      <Helmet>
+        <title>Global Visa Connect — Immigration Consultants Since 2008</title>
+        <meta name="description" content="Expert immigration consultants for student visa, work permit, PR and family sponsorship in Canada, Australia, UK and more." />
+      </Helmet>
 
       {/* Hero Section */}
       <section className="hero">
@@ -343,51 +348,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-grid">
-            <div className="footer-col">
-              <img src={logo} alt="Global Visa Services" className="footer-logo" />
-              <p>Your trusted partner for immigration success. ICCRC & MARA registered consultants.</p>
-            </div>
-            <div className="footer-col">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-              </ul>
-            </div>
-            <div className="footer-col">
-              <h4>Services</h4>
-              <ul>
-                <li><a href="#services">Student Visa</a></li>
-                <li><a href="#services">Work Permit</a></li>
-                <li><a href="#services">PR Applications</a></li>
-                <li><a href="#services">Business Immigration</a></li>
-              </ul>
-            </div>
-            <div className="footer-col">
-              <h4>Contact Us</h4>
-              <ul>
-                <li>📞 <a href="tel:+918699078400">+91 8699078400</a></li>
-                <li>📧 <a href="mailto:info@globalvisaservices.com">info@globalvisaservices.com</a></li>
-                <li>📍 SCO 85-86 (4th Floor)<br />Sector 34A, Chandigarh</li>
-                <li>🕒 Mon-Sat: 9:00 AM - 7:00 PM</li>
-              </ul>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p>&copy; 2024 Global Visa Services. All rights reserved.</p>
-            <div className="footer-links">
-              <a href="#privacy">Privacy Policy</a>
-              <a href="#terms">Terms of Service</a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

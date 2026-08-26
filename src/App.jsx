@@ -1,24 +1,29 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 import HomePage from './Components/HomePage'
 import StudyVisa from './Components/StudyVisa'
 import Service from './Components/Service'
 import Contact from './Components/Contact'
 import AboutUs from './Components/AboutUs'
-import Navbar from './Components/Navbar'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <WhatsAppButton />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/services" element={<Service />} />
-        <Route path="/study-visa" element={<StudyVisa />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<AboutUs />} />
-      </Routes>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<Service />} />
+          <Route path="/study-visa" element={<StudyVisa />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<AboutUs />} />
+        </Routes>
+        <Footer />
+        <WhatsAppButton />
+      </BrowserRouter>
+    </HelmetProvider>
   )
 }
 

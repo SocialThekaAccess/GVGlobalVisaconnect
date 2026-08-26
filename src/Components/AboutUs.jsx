@@ -1,5 +1,6 @@
 import consultantImg from '../assets/consulatant.png'
 import heroImg from '../assets/HerosectionImg.png'
+import { Helmet } from 'react-helmet-async'
 import './AboutUs.css'
 
 const stats = [
@@ -78,6 +79,10 @@ const milestones = [
 function AboutUs() {
   return (
     <div className="au-page">
+      <Helmet>
+        <title>About Us — Global Visa Connect</title>
+        <meta name="description" content="18+ years of immigration expertise. ICCRC & MARA registered. 12,400+ successful applications. Trusted by families across India." />
+      </Helmet>
 
       {/* Hero */}
       <section className="au-hero" style={{ backgroundImage: `url(${heroImg})` }}>

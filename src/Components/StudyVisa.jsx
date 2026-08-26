@@ -1,4 +1,5 @@
 import studyVisaImg from '../assets/StudyVisa.png'
+import { Helmet } from 'react-helmet-async'
 import './StudyVisa.css'
 
 const programs = [
@@ -77,6 +78,10 @@ const faqs = [
 function StudyVisa() {
   return (
     <div className="sv-page">
+      <Helmet>
+        <title>Study Visa — Global Visa Connect</title>
+        <meta name="description" content="Expert student visa guidance for Canada, Australia, UK, USA and more. 5,800+ students placed. 97% visa success rate." />
+      </Helmet>
 
       {/* Hero */}
       <section className="sv-hero" style={{ backgroundImage: `url(${studyVisaImg})` }}>
