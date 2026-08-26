@@ -1,1 +1,426 @@
-/* WorkVisa Styles */
+/* ── WorkVisa Page ── */
+
+.wv-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.wv-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Shared labels */
+.wv-label {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(232, 50, 41, 0.1);
+  color: #e83229;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.wv-section-header {
+  text-align: left;
+  margin-bottom: 56px;
+}
+
+.wv-section-header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: #1a2b4f;
+  margin-bottom: 12px;
+}
+
+.wv-section-header p {
+  color: #6b7280;
+  font-size: 1.05rem;
+}
+
+/* Buttons */
+.wv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Sora', sans-serif;
+}
+
+.wv-btn-primary {
+  background: #e83229;
+  color: white;
+  box-shadow: 0 4px 0 #c12920, 0 8px 15px rgba(232, 50, 41, 0.3);
+}
+
+.wv-btn-primary:hover {
+  background: #d12d25;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #c12920;
+}
+
+.wv-btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.wv-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+.wv-btn-secondary {
+  background: #1a2b4f;
+  color: white;
+  box-shadow: 0 4px 0 #0f1a2e;
+}
+
+.wv-btn-secondary:hover {
+  background: #142039;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #0f1a2e;
+}
+
+/* ── Hero ── */
+.wv-hero {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  background: url('../assets/HerosectionImg.png') center / cover no-repeat;
+  margin-top: 82px;
+}
+
+.wv-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(14, 23, 56, 0.93) 0%, rgba(14, 23, 56, 0.82) 100%);
+}
+
+.wv-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 80px 24px;
+}
+
+.wv-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.wv-hero-content h1 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  color: white;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  max-width: 680px;
+}
+
+.wv-hero-content h1 span {
+  color: #e83229;
+}
+
+.wv-hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.88;
+  max-width: 580px;
+  margin-bottom: 36px;
+}
+
+.wv-hero-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.wv-hero-stats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.wv-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wv-stat strong {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Sora', sans-serif;
+}
+
+.wv-stat span {
+  font-size: 13px;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Categories ── */
+.wv-categories {
+  padding: 100px 0;
+  background: white;
+}
+
+.wv-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.wv-category-card {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.wv-category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+  border-color: #e83229;
+  background: white;
+}
+
+.wv-category-icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.wv-category-card h3 {
+  font-size: 1.15rem;
+  color: #1a2b4f;
+  margin-bottom: 8px;
+}
+
+.wv-category-card p {
+  color: #6b7280;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+/* ── Programs ── */
+.wv-programs {
+  padding: 100px 0;
+  background: #f9fafb;
+}
+
+.wv-programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+.wv-program-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.wv-program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+  border-color: #e83229;
+}
+
+.wv-program-flag {
+  font-size: 2.8rem;
+}
+
+.wv-program-info h3 {
+  font-size: 1.3rem;
+  color: #1a2b4f;
+  margin-bottom: 8px;
+}
+
+.wv-program-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+.wv-program-info p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.wv-link {
+  color: #e83229;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.wv-link:hover {
+  text-decoration: underline;
+}
+
+/* ── Process ── */
+.wv-process {
+  padding: 100px 0;
+  background: white;
+}
+
+.wv-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.wv-step {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 32px;
+  border-left: 4px solid #e83229;
+}
+
+.wv-step-num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e83229;
+  font-family: 'Sora', sans-serif;
+  margin-bottom: 12px;
+}
+
+.wv-step h4 {
+  font-size: 1.1rem;
+  color: #1a2b4f;
+  margin-bottom: 8px;
+}
+
+.wv-step p {
+  color: #6b7280;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+/* ── FAQ ── */
+.wv-faq {
+  padding: 100px 0;
+  background: #f9fafb;
+}
+
+.wv-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 24px;
+}
+
+.wv-faq-item {
+  background: white;
+  border-radius: 12px;
+  padding: 28px 32px;
+  border-left: 4px solid #e83229;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.wv-faq-item h4 {
+  font-size: 1.05rem;
+  color: #1a2b4f;
+  margin-bottom: 10px;
+}
+
+.wv-faq-item p {
+  color: #6b7280;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+/* ── CTA ── */
+.wv-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #1a2b4f 0%, #0f1a2e 100%);
+}
+
+.wv-cta-content {
+  text-align: left;
+}
+
+.wv-cta-content h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: white;
+  margin-bottom: 16px;
+}
+
+.wv-cta-content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  margin-bottom: 36px;
+}
+
+.wv-cta-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .wv-hero {
+    min-height: 70vh;
+  }
+
+  .wv-hero-stats {
+    gap: 24px;
+  }
+
+  .wv-programs-grid,
+  .wv-steps-grid,
+  .wv-categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wv-faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wv-hero-btns {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .wv-container {
+    padding: 0 16px;
+  }
+
+  .wv-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .wv-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

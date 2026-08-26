@@ -1,20 +1,8 @@
-import { useState, useEffect } from 'react'
-import logo from '../assets/GVC-logo.png'
 import heroImg from '../assets/HerosectionImg.png'
 import consultantImg from '../assets/consulatant.png'
 import './HomePage.css'
 
 function HomePage() {
-  const [scrolled, setScrolled] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   const services = [
     {
@@ -125,41 +113,11 @@ function HomePage() {
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-      setMobileMenuOpen(false)
-    }
+    if (element) element.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
     <div className="app">
-      {/* Navigation */}
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-        <div className="container">
-          <div className="nav-content">
-            <div className="logo">
-              <img src={logo} alt="Global Visa Services" />
-            </div>
-            <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-              <a href="#services" onClick={() => scrollToSection('services')}>Services</a>
-              <a href="#study-visa">Study Visa</a>
-              <a href="#work-visa">Work Visa</a>
-              <a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a>
-            </div>
-            <div className="nav-cta">
-              <a href="tel:+918699078400" className="btn btn-primary">Book Consultation</a>
-            </div>
-            <button
-              className="mobile-menu-btn"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section className="hero">
