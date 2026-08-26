@@ -12,32 +12,67 @@ const stats = [
 
 const values = [
   {
-    icon: '🏅',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
     title: 'Licensed & Regulated',
     desc: 'All our consultants are ICCRC and MARA registered — fully licensed, fully accountable.'
   },
   {
-    icon: '🤝',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="8.5" cy="7" r="4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M20 8V14M17 11H23" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
     title: 'Client First, Always',
     desc: 'We treat every case as if it were our own. Your goals are our goals, your success is our success.'
   },
   {
-    icon: '🔍',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="11" cy="11" r="8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M21 21L16.65 16.65" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
     title: 'Radical Transparency',
     desc: 'Fixed fees, written timelines, clear communication. No surprises, no hidden charges — ever.'
   },
   {
-    icon: '🌐',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
+        <path d="M2 12H22" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M12 2C9.5 6 8 9 8 12C8 15 9.5 18 12 22" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M12 2C14.5 6 16 9 16 12C16 15 14.5 18 12 22" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+      </svg>
+    ),
     title: 'Global Expertise',
     desc: 'Decades of combined casework across Canada, Australia, UK, USA, New Zealand and Europe.'
   },
   {
-    icon: '👤',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="9" cy="7" r="3" stroke="currentColor" strokeWidth="2"/>
+        <path d="M3 21V19C3 16.79 5.24 15 8 15H10C12.76 15 15 16.79 15 19V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M16 3.13C17.16 3.35 18 4.38 18 5.63C18 6.87 17.16 7.9 16 8.12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M21 21V19C20.99 17.76 20.15 16.73 19 16.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+      </svg>
+    ),
     title: 'Dedicated Case Manager',
     desc: 'One expert owns your file end to end. Not a call centre, not a rotating team — one person.'
   },
   {
-    icon: '🚀',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
     title: 'Results-Driven',
     desc: '98% approval rate built on meticulous documentation, deep knowledge and relentless follow-up.'
   }
@@ -153,35 +188,6 @@ function AboutUs() {
                 <div className="au-value-icon">{v.icon}</div>
                 <h3>{v.title}</h3>
                 <p>{v.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="au-team">
-        <div className="au-container">
-          <div className="au-section-header">
-            <span className="au-label">The People Behind Your Case</span>
-            <h2>Meet Our Team</h2>
-            <p>Licensed experts who treat your case as their own</p>
-          </div>
-          <div className="au-team-grid">
-            {team.map((t, i) => (
-              <div key={i} className="au-team-card">
-                <div className="au-team-avatar">
-                  {t.name.charAt(0)}
-                </div>
-                <div className="au-team-info">
-                  <h3>{t.name}</h3>
-                  <span className="au-team-role">{t.role}</span>
-                  <div className="au-team-meta">
-                    <span className="au-team-tag">{t.exp}</span>
-                    <span className="au-team-tag">{t.cred}</span>
-                  </div>
-                  <p>{t.desc}</p>
-                </div>
               </div>
             ))}
           </div>

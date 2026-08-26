@@ -92,6 +92,7 @@
   min-height: 80vh;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -109,8 +110,7 @@
   z-index: 2;
   color: white;
   padding: 80px 0;
-  padding-left: 24px;
-  padding-right: 24px;
+  text-align: left;
 }
 
 .au-badge {
@@ -132,6 +132,7 @@
   line-height: 1.1;
   margin-bottom: 24px;
   max-width: 680px;
+  text-align: left;
 }
 
 .au-hero-content h1 span {
@@ -144,6 +145,7 @@
   opacity: 0.88;
   max-width: 600px;
   margin-bottom: 48px;
+  text-align: left;
 }
 
 .au-hero-stats {
@@ -270,8 +272,15 @@
 }
 
 .au-value-icon {
-  font-size: 2.2rem;
+  width: 48px;
+  height: 48px;
+  color: #e83229;
   margin-bottom: 20px;
+}
+
+.au-value-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .au-value-card h3 {

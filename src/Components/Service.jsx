@@ -120,7 +120,7 @@ function Service() {
           </div>
           <div className="sr-services-grid">
             {services.map((s, i) => (
-              <div key={i} className="sr-service-card">
+              <div key={i} id={s.title.toLowerCase().replace(/\s+/g, '-')} className="sr-service-card">
                 <div className="sr-service-icon">{s.icon}</div>
                 <h3>{s.title}</h3>
                 <p>{s.desc}</p>

@@ -41,7 +41,7 @@ function Navbar() {
           <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
             <Link to="/services">Services</Link>
             <Link to="/study-visa">Study Visa</Link>
-            <Link to="/process">Process</Link>
+            <Link to="/about">About Us</Link>
           </div>
 
           <div className="nav-cta">

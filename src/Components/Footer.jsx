@@ -39,9 +39,9 @@ function Footer() {
             <h4>Our Services</h4>
             <ul>
               <li><Link to="/study-visa">Student Visa</Link></li>
-              <li><Link to="/services">Visitor Visa</Link></li>
-              <li><Link to="/services">PR Applications</Link></li>
-              <li><Link to="/services">Business Immigration</Link></li>
+              <li><Link to="/services#visitor-visa">Visitor Visa</Link></li>
+              <li><Link to="/services#permanent-residency">PR Applications</Link></li>
+              <li><Link to="/services#business-immigration">Business Immigration</Link></li>
             </ul>
           </div>
 
