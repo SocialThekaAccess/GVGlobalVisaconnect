@@ -1,3 +1,4 @@
+import studyVisaImg from '../assets/StudyVisa.png'
 import './StudyVisa.css'
 
 const programs = [
@@ -78,7 +79,7 @@ function StudyVisa() {
     <div className="sv-page">
 
       {/* Hero */}
-      <section className="sv-hero">
+      <section className="sv-hero" style={{ backgroundImage: `url(${studyVisaImg})` }}>
         <div className="sv-hero-overlay" />
         <div className="sv-container sv-hero-content">
           <span className="sv-badge">STUDENT VISA SERVICES</span>
