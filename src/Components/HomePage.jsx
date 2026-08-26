@@ -142,9 +142,8 @@ function HomePage() {
             </div>
             <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
               <a href="#services" onClick={() => scrollToSection('services')}>Services</a>
-              <a href="#destinations" onClick={() => scrollToSection('destinations')}>Destinations</a>
-              <a href="#process" onClick={() => scrollToSection('process')}>Process</a>
-              <a href="#testimonials" onClick={() => scrollToSection('testimonials')}>Reviews</a>
+              <a href="#study-visa">Study Visa</a>
+              <a href="#work-visa">Work Visa</a>
               <a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a>
             </div>
             <div className="nav-cta">
