@@ -145,7 +145,7 @@ function Service() {
           <div className="sr-why-strip-grid">
             <div className="sr-why-strip-item">
               <div className="sr-why-icon">🏅</div>
-              <h4>ICCRC & MARA Registered</h4>
+              <h4>Licensed & Registered</h4>
               <p>Licensed and regulated immigration consultants you can trust.</p>
             </div>
             <div className="sr-why-strip-item">

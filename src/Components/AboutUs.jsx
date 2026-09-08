@@ -18,7 +18,7 @@ const values = [
       </svg>
     ),
     title: 'Licensed & Regulated',
-    desc: 'All our consultants are ICCRC and MARA registered — fully licensed, fully accountable.'
+    desc: 'All our consultants are fully licensed and regulated — fully accountable to international standards.'
   },
   {
     icon: (
@@ -83,21 +83,21 @@ const team = [
     name: 'Harpreet Singh',
     role: 'Founder & Senior Immigration Consultant',
     exp: '18+ years',
-    cred: 'ICCRC Registered',
+    cred: 'Licensed Consultant',
     desc: 'Harpreet founded Global Visa Connect in 2008 with a mission to make immigration honest, simple and accessible for every family.'
   },
   {
     name: 'Simran Kaur',
     role: 'Head of Student Visa Division',
     exp: '12+ years',
-    cred: 'MARA Registered',
+    cred: 'Licensed Consultant',
     desc: 'Simran has personally guided 3,200+ students to universities in Canada, Australia and the UK — a trusted mentor for every applicant.'
   },
   {
     name: 'Rajiv Mehta',
     role: 'PR Specialist',
     exp: '10+ years',
-    cred: 'ICCRC Member',
+    cred: 'Licensed Consultant',
     desc: 'Rajiv specialises in LMIA, Express Entry and employer-sponsored pathways, with an unbroken 96% first-attempt success rate.'
   }
 ]
@@ -105,7 +105,7 @@ const team = [
 const milestones = [
   { year: '2008', event: 'Founded in Chandigarh with a team of 3 advisors and a mission to transform immigration consulting in India.' },
   { year: '2012', event: 'Crossed 1,000 successful visa applications. Expanded to student visa and PR categories.' },
-  { year: '2016', event: 'Opened second office in Delhi. Achieved ICCRC and MARA dual registration.' },
+  { year: '2016', event: 'Opened second office in Delhi. Achieved full international licensing and registration.' },
   { year: '2019', event: 'Launched dedicated Australia and New Zealand immigration division. 5,000+ cases milestone.' },
   { year: '2022', event: 'Recognised as one of North India\'s top immigration consultancies. 10,000+ successful applications.' },
   { year: '2024', event: '12,400+ successful applications across 40 countries. 98% approval rate maintained.' }
@@ -116,7 +116,7 @@ function AboutUs() {
     <div className="au-page">
       <Helmet>
         <title>About Us — Global Visa Connect</title>
-        <meta name="description" content="18+ years of immigration expertise. ICCRC & MARA registered. 12,400+ successful applications. Trusted by families across India." />
+        <meta name="description" content="18+ years of immigration expertise. Licensed & registered consultants. 12,400+ successful applications. Trusted by families across India." />
       </Helmet>
 
       {/* Hero */}

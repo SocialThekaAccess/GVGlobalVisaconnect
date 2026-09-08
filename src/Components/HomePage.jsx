@@ -125,7 +125,6 @@ function HomePage() {
         <div className="hero-overlay"></div>
         <div className="container hero-content">
           <div className="hero-text">
-            <span className="badge-hero">LICENSED IMMIGRATION CONSULTANTS SINCE 2008</span>
             <h1>Your global future<br /><span className="highlight">expertly navigated</span></h1>
             <p>Global Visa Connect guides students and families through study and residency pathways in over 40 countries — with a process built on precision, transparency and genuine care.</p>
             <div className="hero-buttons">
@@ -136,10 +135,6 @@ function HomePage() {
               <div className="trust-item">
                 <span className="star">⭐</span>
                 <span>4.9/5 from 2,100+ clients</span>
-              </div>
-              <div className="trust-item">
-                <span className="badge-icon">✓</span>
-                <span>ICCRC & MARA registered advisors</span>
               </div>
             </div>
           </div>
